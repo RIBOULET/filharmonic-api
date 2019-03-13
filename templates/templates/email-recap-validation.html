@@ -2,11 +2,11 @@
 
   <p>Bonjour {{ .Destinataire.Nom }},</p>
 
-  <p>L'inspection du {{ .DateInspection }} sur votre établissement {{ .RaisonEtablissement }} a été validée.
-    Vous pouvez consulter le rapport final sur <a href="{{ $.BaseURL }}/inspections/{{ .InspectionId }}">Fil'Harmonic</a>.</p>
+  <p>Le rapport de l'inspection du {{ .DateInspection }} sur votre établissement {{ .RaisonEtablissement }} est disponible.
+    Vous pouvez le consulter sur <a href="{{ $.BaseURL }}/inspections/{{ .InspectionId }}">Fil'Harmonic</a>.</p>
 
   {{ if .NonConformites }}
-  <p>De plus, l'inspection a fait l'objet de non-conformités. Vous pouvez consulter le détail des constats et leurs échéances de résolution.</p>
+  <p>De plus,l'inspection a fait l'objet de non-conformités. Vous pouvez consulter le détail des constats et leurs échéances de résolution.</p>
   {{ end }}
 
 {{ end }}
